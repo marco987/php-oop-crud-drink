@@ -15,6 +15,13 @@
     }
   };
 
-  echo $bevande;
+  for ($i=0; $i<sizeof($bevande); $i++) {
+
+    $bevanda = $bevande[$i];
+
+    echo $bevanda . "<br>";
+  }
+
+  echo "<br>--------------------------------<br><br>";
 
 ?>
