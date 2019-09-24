@@ -15,9 +15,7 @@
     }
   };
 
-  for ($i=0; $i<sizeof($bevande); $i++) {
-
-    $bevanda = $bevande[$i];
+  foreach ($bevande as $bevanda) {
 
     echo $bevanda . "<br>";
   }
@@ -28,9 +26,7 @@
   $max = $bevande[0];
   $sum = 0;
 
-  for ($i=0; $i<sizeof($bevande); $i++) {
-
-    $bevanda = $bevande[$i];
+  foreach ($bevande as $bevanda) {
 
     $bevandaPrezzo = $bevanda -> getPrezzo();
     $minPrezzo = $min -> getPrezzo();
