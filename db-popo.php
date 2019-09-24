@@ -10,11 +10,11 @@
 
     public function __construct($row) {
 
-      $this -> id = setId($row["id"]);
-      $this -> nome = setNome($row["nome"]);
-      $this -> marca = setMarca($row["marca"]);
-      $this -> prezzo = setPrezzo($row["prezzo"]);
-      $this -> scadenza = setScadenza($row["scadenza"]);
+      $this -> setId($row["id"]);
+      $this -> setNome($row["nome"]);
+      $this -> setMarca($row["marca"]);
+      $this -> setPrezzo($row["prezzo"]);
+      $this -> setScadenza($row["scadenza"]);
     }
 
     public function getId() {
